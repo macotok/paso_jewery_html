@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "webpack-dev-server & yarn run watch:pug --watch",
+    "start": "concurrently \"webpack-dev-server\" \"yarn run watch:pug\" --watch",
     "dev": "webpack --mode development",
-    "build": "webpack & yarn run pug --mode production",
+    "build": "concurrently \"webpack\" \"yarn run watch\" --mode production",
     "pug": "pug src/pug/ --hierarchy -o dist/html -P",
     "watch:pug": "pug src/pug/ --hierarchy -o dist/html -P -w"
   },
@@ -27,6 +27,7 @@
     "@babel/preset-env": "^7.0.0",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.2",
+    "concurrently": "^4.1.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
