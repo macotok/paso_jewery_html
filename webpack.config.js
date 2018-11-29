@@ -34,22 +34,29 @@ module.exports = [
         },
         {
           test: /\.scss$/,
-          use: [{
-            loader: MiniCssExtractPlugin.loader,
-          }, {
-            loader: 'css-loader',
-          }, {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [
-                require('autoprefixer')({
-                  browsers: ['last 2 versions', 'Android >= 4'],
-                }),
-              ],
+          use:[
+            {
+              loader: MiniCssExtractPlugin.loader,
             },
-          }, {
-            loader: 'sass-loader',
-          }],
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  require('autoprefixer')(
+                    {
+                      browsers: ['last 2 versions', 'Android >= 4'],
+                    },
+                  ),
+                ],
+              },
+            },
+            {
+              loader: 'sass-loader',
+            },
+          ],
         },
       ],
     },
