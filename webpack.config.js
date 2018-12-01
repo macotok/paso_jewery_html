@@ -58,6 +58,17 @@ module.exports = [
             },
           ],
         },
+        {
+          test: /\.(mp4)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+              },
+            },
+          ],
+        },
       ],
     },
     resolve: {
@@ -68,6 +79,10 @@ module.exports = [
         {
           from: path.resolve(__dirname, 'src/img/'),
           to: path.resolve(__dirname, 'dist/img/'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/video/'),
+          to: path.resolve(__dirname, 'dist/video/'),
         },
       ]),
       new MiniCssExtractPlugin({
