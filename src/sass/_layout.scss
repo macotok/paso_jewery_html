@@ -1,6 +1,10 @@
 .l-wrapper {
+  position: relative;
   &-top {
     background-image: url("../img/top_bg.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }

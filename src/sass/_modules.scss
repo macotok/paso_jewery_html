@@ -8,3 +8,26 @@
     height: auto;
     z-index: -100;
 }
+
+.m-logo-01 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.m-nav-01 {
+    position: absolute;
+    top: 48px;
+    left: 70px;
+    nav {
+        li {
+            margin-bottom: 5px;
+            a {
+                text-decoration: none;
+                color: #fbfbfb;
+            }
+            &:first-child {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
