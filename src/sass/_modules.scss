@@ -1,3 +1,5 @@
+$gray-text: #333;
+
 .m-video-01 {
   position: fixed;
   right: 0;
@@ -25,7 +27,7 @@
             margin-bottom: 5px;
             a {
                 text-decoration: none;
-                color: #333333;
+                color: $gray-text;
                 .l-wrapper-top & {
                   color: #fbfbfb;
                 }
@@ -82,6 +84,38 @@
         span {
           opacity: 1;
         }
+    }
+  }
+}
+
+.m-pagination-01 {
+  display: flex;
+  justify-content: center;
+  div:first-child {
+    margin-right: 10px;
+  }
+  a {
+    font-size: 90%;
+    text-decoration: none;
+    color: $gray-text;
+    line-height: 25px;
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+  }
+  &-list {
+    margin-right: 10px;
+    a {
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        @include pagination();
+      }
+    }
+    &.active {
+      @include pagination();
     }
   }
 }
