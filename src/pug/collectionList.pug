@@ -3,24 +3,31 @@ html(lang="ja")
     head
         include _include/meta
     body
-        div.wrapper
-            include _include/header
+        div.l-wrapper
+            include _include/header2
             main
                 section
                     div.m-list-01
-                        ul
-                            li: a(href="#")
-                                div.m-box-02-photo: img(src="../img/collection.jpg", width="300", alt="")
-                                p.m-box-02-number 1
-                            li: a(href="#")
-                                div.m-box-02-photo: img(src="../img/collection.jpg", width="300", alt="")
-                                p.m-box-02-number 1
-                            li: a(href="#")
-                                div.m-box-02-photo: img(src="../img/collection.jpg", width="300", alt="")
-                                p.m-box-02-number 1
-                            li: a(href="#")
-                                div.m-box-02-photo: img(src="../img/collection.jpg", width="300", alt="")
-                                p.m-box-02-number 1
+                        ul.m-list-01-block
+                            li.m-list-01-list: a(href="#")
+                                div.m-list-01-photo: img(src="../img/collection.jpg", alt="")
+                                p.m-list-01-number
+                                    span
+                                    | 10日(月)
+                                    br
+                                    | さらに積雪
+                            li.m-list-01-list: a(href="#")
+                                div.m-list-01-photo: img(src="../img/collection.jpg", alt="")
+                                p.m-list-01-number
+                                    span 2
+                            li.m-list-01-list: a(href="#")
+                                div.m-list-01-photo: img(src="../img/collection.jpg", alt="")
+                                p.m-list-01-number
+                                    span 3
+                            li.m-list-01-list: a(href="#")
+                                div.m-list-01-photo: img(src="../img/collection.jpg", alt="")
+                                p.m-list-01-number
+                                    span 4
                     include _include/pagination
             include _include/nav
             include _include/footer
