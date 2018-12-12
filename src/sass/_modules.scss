@@ -40,12 +40,14 @@ $gray-text: #333;
 }
 
 .m-list-01 {
+  margin-bottom: 50px;
   &-block {
     display: flex;
     flex-wrap: wrap;
   }
   &-list {
     margin-bottom: 32px;
+    overflow: hidden;
     &:nth-child(odd) {
       margin-right: 32px;
     }
@@ -72,18 +74,14 @@ $gray-text: #333;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    transition: opacity .5s ease;
+    height: 105%;
+    transition: all .5s ease;
     opacity: 0;
     background-color: #fff;
-    span {
-      opacity: 0;
-    }
+    transform: translateY(-5%);
     &:hover {
-        opacity: .5;
-        span {
-          opacity: 1;
-        }
+      opacity: .5;
+      transform: translateY(0%);
     }
   }
 }
