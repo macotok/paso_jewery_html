@@ -90,7 +90,7 @@ $gray-text: #b2b2b2;
 .m-list-02 {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 100px 0 20px;
   li {
     color: $gray-text;
     font-size: 80%;
@@ -114,10 +114,19 @@ $gray-text: #b2b2b2;
   }
 }
 
+.m-box-01 {
+  width: 1200px;
+  margin: 0 auto;
+  img {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 100%;
+  }
+}
+
 .m-pagination-01 {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
   div:first-child {
     margin-right: 10px;
   }
