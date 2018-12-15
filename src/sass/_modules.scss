@@ -17,6 +17,18 @@ $gray-text: #b2b2b2;
   padding: 40px 0 80px;
 }
 
+.m-title-01 {
+  margin: 40px 0;
+  text-align: center;
+  &-date {
+    font-size: 80%;
+    color: $gray-text;
+  }
+  &-text {
+    font-size: 90%;
+    color: #4d4d4d;
+  }
+}
 .m-nav-01 {
     position: absolute;
     top: 48px;
