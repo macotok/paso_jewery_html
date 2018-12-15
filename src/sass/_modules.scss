@@ -1,4 +1,5 @@
-$gray-text: #333;
+$black-text: #333;
+$gray-text: #b2b2b2;
 
 .m-video-01 {
   position: fixed;
@@ -27,7 +28,7 @@ $gray-text: #333;
             margin-bottom: 5px;
             a {
                 text-decoration: none;
-                color: $gray-text;
+                color: $black-text;
                 .l-wrapper-top & {
                   color: #fbfbfb;
                 }
@@ -86,16 +87,44 @@ $gray-text: #333;
   }
 }
 
+.m-list-02 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  li {
+    color: $gray-text;
+    font-size: 80%;
+    padding-right: 5px;
+    &:after {
+      padding-left: 5px;
+      content: "/";
+    }
+    &:last-child {
+      padding-right: 0;
+      &:after {
+        padding-left: 0;
+        content: "";
+      }
+    }
+    a {
+      color: $gray-text;
+      font-size: 80%;
+      text-decoration: none;
+    }
+  }
+}
+
 .m-pagination-01 {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
   div:first-child {
     margin-right: 10px;
   }
   a {
     font-size: 90%;
     text-decoration: none;
-    color: $gray-text;
+    color: $black-text;
     line-height: 25px;
   }
   &-block {
