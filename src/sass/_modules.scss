@@ -41,7 +41,6 @@ $gray-text: #b2b2b2;
 }
 
 .m-list-01 {
-  margin-bottom: 50px;
   &-block {
     display: flex;
     flex-wrap: wrap;
@@ -71,18 +70,9 @@ $gray-text: #b2b2b2;
     position: absolute;
     top: 0;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 105%;
-    transition: all .5s ease;
-    opacity: 0;
-    background-color: #fff;
-    transform: translateY(-5%);
+    @include photoAnimation();
     &:hover {
-      opacity: .5;
-      transform: translateY(0%);
+      @include photoAnimationHover()
     }
   }
 }
@@ -114,6 +104,46 @@ $gray-text: #b2b2b2;
   }
 }
 
+.m-list-03 {
+  &-list {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto 40px;
+    a {
+      text-decoration: none;
+      position: relative;
+      display: block;
+    }
+  }
+  &-photo {
+    position: relative;
+    z-index: 1;
+    img {
+      max-width: 100%;
+    }
+  }
+  &-info {
+    color: $black-text;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    @include photoAnimation();
+    &:hover {
+      @include photoAnimationHover()
+    }
+  }
+  &-inner {
+    text-align: center;
+    font-weight: bold;
+  }
+  &-date {
+    font-size: 75%;
+  }
+  &-text {
+    font-size: 80%;
+  }
+}
+
 .m-box-01 {
   width: 1200px;
   margin: 0 auto;
@@ -127,6 +157,7 @@ $gray-text: #b2b2b2;
 .m-pagination-01 {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
   div:first-child {
     margin-right: 10px;
   }
