@@ -257,11 +257,13 @@ $gray-text: #b2b2b2;
     color: #989898;
     line-height: 50px;
     padding-left: 70px;
+    font-size: 100%;
     &:hover {
       cursor: pointer;
     }
   }
 }
+
 .m-pagination-01 {
   display: flex;
   justify-content: center;
