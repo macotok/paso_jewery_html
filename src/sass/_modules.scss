@@ -209,6 +209,15 @@ $gray-text: #b2b2b2;
       max-width: 100%;
     }
   }
+  &-inner {
+    display: flex;
+  }
+  &-img {
+    margin-right: 40px;
+    img {
+      width: 400px;
+    }
+  }
 }
 
 .m-pagination-01 {
