@@ -1,6 +1,5 @@
 $black-text: #333;
 $gray-text: #b2b2b2;
-$gray-text02: #4d4d4d;
 
 .m-video-01 {
   position: fixed;
@@ -33,7 +32,18 @@ $gray-text02: #4d4d4d;
   }
   &-text {
     font-size: 90%;
-    color: $gray-text02;
+  }
+}
+
+.m-title-03 {
+  margin: 40px 0;
+  &-title {
+    font-size: 110%;
+    margin-bottom: 10px;
+  }
+  &-date {
+    font-size: 90%;
+    color: $gray-text;
   }
 }
 
@@ -170,14 +180,14 @@ $gray-text02: #4d4d4d;
     margin-bottom: 40px;
     a {
       text-decoration: none;
-      color: $gray-text02;
+      color: #4d4d4d;
       font-size: 90%;
     }
   }
   &-list-noLink {
     margin-bottom: 40px;
-    color: $gray-text02;
     font-size: 90%;
+  }
 }
 
 .m-box-01 {
@@ -187,6 +197,17 @@ $gray-text02: #4d4d4d;
     display: block;
     margin: 0 auto 40px;
     max-width: 100%;
+  }
+}
+
+.m-box-02 {
+  width: 900px;
+  margin: 0 auto;
+  &-eyecatch {
+    margin-bottom: 40px;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
