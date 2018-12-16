@@ -3,16 +3,17 @@ html(lang="ja")
     head
         include _include/meta
     body
-        div.wrapper
-            include _include/header
+        div.l-wrapper
+            include _include/header2
             main
                 section
-                    h1.m-title03 contact
-                    div.m-contact-01
-                        form
-                            input(type="text", placeholder="name")
-                            input(type="text", placeholder="email")
-                            input(type="textarea", placeholder="message")
-                            input(type="submit", value="send")
+                    div.m-box-03
+                        h1.m-box-03-title contact
+                        div.m-box-03-contact
+                            form
+                                input.m-box-03-input-01(type="text", placeholder="name")
+                                input.m-box-03-input-01(type="text", placeholder="email")
+                                textarea.m-box-03-input-02(placeholder="message", rows="8")
+                                input.m-box-03-button(type="submit", value="send")
             include _include/nav
             include _include/footer
