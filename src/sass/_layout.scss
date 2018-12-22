@@ -1,4 +1,4 @@
-.l-wrapper {
+.l-wrapper-01 {
   width: 1220px;
   margin: 0 auto;
   &-top {
@@ -8,6 +8,11 @@
     background-attachment: fixed;
     background-size: cover;
   }
+}
+
+.l-wrapper-02 {
+  width: 900px;
+  margin: 0 auto;
 }
 
 .l-main {

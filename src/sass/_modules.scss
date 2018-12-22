@@ -146,8 +146,8 @@ $gray-text: #b2b2b2;
 .m-list-03 {
   &-list {
     overflow: hidden;
-    width: 400px;
-    margin: 0 auto 40px;
+    margin-bottom:40px;
+    text-align: center;
     a {
       text-decoration: none;
       position: relative;
@@ -159,6 +159,7 @@ $gray-text: #b2b2b2;
     z-index: 1;
     img {
       max-width: 100%;
+      width: 100%;
     }
   }
   &-info {
@@ -195,8 +196,6 @@ $gray-text: #b2b2b2;
 }
 
 .m-box-01 {
-  width: 1200px;
-  margin: 0 auto;
   img {
     display: block;
     margin: 0 auto 40px;
@@ -205,8 +204,6 @@ $gray-text: #b2b2b2;
 }
 
 .m-box-02 {
-  width: 900px;
-  margin: 0 auto;
   &-eyecatch {
     margin-bottom: 40px;
     img {
@@ -225,8 +222,6 @@ $gray-text: #b2b2b2;
 }
 
 .m-box-03 {
-  width: 900px;
-  margin: 0 auto;
   padding: 40px;
   box-sizing: border-box;
   background-color: #fafafa;

@@ -4,3 +4,31 @@
     margin-left: 0;
   }
 }
+
+@media screen and (min-width: 931px) {
+  .is-pc {
+    display: block;
+  }
+  .is-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .m-nav-01 {
+    left: 40px;
+    margin-left: 0;
+  }
+  .is-pc {
+    display: none;
+  }
+  .is-sp {
+    display: block;
+  }
+  .l-wrapper-01,
+  .l-wrapper-02 {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
