@@ -107,6 +107,19 @@ $gray-text02: #989898;
   }
 }
 
+.m-nav-03 {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  z-index: z(navSp);
+  a {
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .m-list-01 {
   width: 100%;
   &-block {
