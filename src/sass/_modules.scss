@@ -1,5 +1,6 @@
-$black-text: #333;
+$black-text: #4d4d4d;
 $gray-text: #b2b2b2;
+$gray-text02: #989898;
 
 .m-video-01 {
   position: fixed;
@@ -218,7 +219,7 @@ $gray-text: #b2b2b2;
     margin-bottom: 40px;
     a {
       text-decoration: none;
-      color: #4d4d4d;
+      color: $black-text;
       font-size: 90%;
       @extend .is-linkAnimation;
     }
@@ -235,6 +236,7 @@ $gray-text: #b2b2b2;
 
 .m-box-02 {
   &-eyecatch {
+    text-align: center;
     margin-bottom: 40px;
     img {
       max-width: 100%;
@@ -254,6 +256,17 @@ $gray-text: #b2b2b2;
   &-text {
     width: 52%;
   }
+  &-articleLink {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30%;
+    &-link {
+      a {
+        @extend .is-linkAnimation;
+      }
+    }
+  }
 }
 
 .m-box-03 {
@@ -262,7 +275,7 @@ $gray-text: #b2b2b2;
   background-color: #fafafa;
   &-title {
     margin-bottom: 20px;
-    color: #989898;
+    color: $gray-text02;
   }
   input,
   textarea {
@@ -288,7 +301,7 @@ $gray-text: #b2b2b2;
     background-image: url("../img/send.svg");
     background-repeat: no-repeat;
     background-size: 50px;
-    color: #989898;
+    color: $gray-text02;
     line-height: 50px;
     padding-left: 70px;
     font-size: 100%;

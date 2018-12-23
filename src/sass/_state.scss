@@ -1,6 +1,8 @@
 .is-linkAnimation {
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  color: $black-text;
   &:before {
     position: absolute;
     top: 1.5em;
@@ -9,7 +11,7 @@
     display: inline-block;
     width: 0;
     height: 1px;
-    background: #4d4d4d;
+    background: $black-text;
     transition: .3s;
   }
   &:hover:before {
