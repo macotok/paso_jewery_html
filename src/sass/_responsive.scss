@@ -59,4 +59,16 @@
       }
     }
   }
+  .m-box-02 {
+    &-inner {
+      display: block;
+    }
+    &-img {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &-text {
+      width: 100%;
+    }
+  }
 }
