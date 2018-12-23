@@ -25,13 +25,13 @@ $gray-text: #b2b2b2;
 }
 
 .m-title-01 {
-  margin: 40px 0 80px;
+  margin-bottom: 80px;
   text-align: center;
   font-size: 110%;
 }
 
 .m-title-02 {
-  margin: 40px 0;
+  margin-bottom: 40px;
   text-align: center;
   &-date {
     font-size: 80%;
@@ -107,15 +107,17 @@ $gray-text: #b2b2b2;
 }
 
 .m-list-01 {
+  width: 100%;
   &-block {
     display: flex;
     flex-wrap: wrap;
   }
   &-list {
-    margin-bottom: 32px;
+    margin-bottom: 4%;
+    width: 48%;
     overflow: hidden;
     &:nth-child(odd) {
-      margin-right: 32px;
+      margin-right: 4%;
     }
     a {
       text-decoration: none;
@@ -127,8 +129,8 @@ $gray-text: #b2b2b2;
     position: relative;
     z-index: 1;
     img {
-      width: 594px;
-      height: 396px;
+      width: 100%;
+      height: 300px;
       object-fit: cover;
     }
   }
