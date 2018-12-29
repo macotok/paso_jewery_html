@@ -12,6 +12,6 @@ window.onload = () => {
   // CollectionListのAnimation
   const animationList = new AnimationList('fn-animationList', '.m-list-01-list');
   if (animationList.hasTarget) {
-    animationList.positionDataSet();
+    animationList.setPositionList();
   }
 };

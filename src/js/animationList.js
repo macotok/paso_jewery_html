@@ -11,7 +11,7 @@ export default class AnimationList {
     this.styleVisible = 'visible';
   }
 
-  positionDataSet() {
+  setPositionList() {
     this.targetDom.forEach((t) => {
       this.targetDomPositionList.push(t.offsetTop);
     });
@@ -54,7 +54,7 @@ export default class AnimationList {
       clearTimeout(this.observeResize);
       this.observeResize = setTimeout(() => {
         this.targetDomPositionList = [];
-        this.positionDataSet();
+        this.setPositionList();
       }, this.observeTime);
     }, false);
   }
