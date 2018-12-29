@@ -26,3 +26,15 @@
   opacity: .5;
   transform: translateY(0%);
 }
+
+@mixin faIconBase($fontFamily: "Font Awesome 5 Brands", $fontSize: 100%, $color: $black-text) {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+}
+

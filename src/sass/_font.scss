@@ -1,0 +1,10 @@
+.instagram {
+  &::before {
+    content: "\f16d";
+  }
+}
+.facebook {
+  &::before {
+    content: "\f09a";
+  }
+}

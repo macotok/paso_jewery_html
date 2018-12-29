@@ -73,6 +73,19 @@
             }
         }
     }
+    .m-snsBox {
+      ul {
+        display: flex;
+        li {
+          margin-right: .5em;
+          a {
+            &::before {
+              @include faIconBase("Font Awesome 5 Brands", 120%, $black-text);
+            }
+          }
+        }
+      }
+    }
 }
 
 .m-nav-02 {
@@ -136,13 +149,26 @@
     }
   }
   .m-snsBox {
-    padding-top: 50px;
+    padding-top: 40px;
     ul {
       display: flex;
       justify-content: center;
       li {
         &:first-child {
           margin-right: 20px;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #D0D0D0;
+          border-radius: 36px;
+          width: 36px;
+          height: 36px;
+          text-decoration: none;
+          &::before {
+            @include faIconBase("Font Awesome 5 Brands", 120%, #D0D0D0);
+          }
         }
       }
     }
