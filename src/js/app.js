@@ -16,7 +16,7 @@ window.onload = () => {
     animationList.setPositionList();
   }
   // PCでCalendarを表示
-  const calendarPc = new CalendarPc('.fn-calendarNav', '.m-calendar-01-pc', '.fn-calendarClose');
+  const calendarPc = new CalendarPc('.fn-calendarNav', '.m-calendar-01', '.fn-calendarClose');
   if (calendarPc.calendarNav) {
     calendarPc.event();
   }
