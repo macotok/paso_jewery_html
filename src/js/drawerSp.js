@@ -7,7 +7,9 @@ export default class DrawerSp {
     this.isHide = 'is-hide';
     this.isHidden = 'is-hidden';
     this.fadeInUp = 'fadeInUp';
+    this.fadeOut = 'fadeOut';
     this.targetCancelButton = targetCancelButton;
+    this.setTimer = 300;
   }
 
   event() {
@@ -17,9 +19,13 @@ export default class DrawerSp {
       this.body.classList.add(this.isHidden);
     }, false);
     this.cancelButton[this.targetCancelButton].addEventListener('click', () => {
-      this.targetDom.classList.add(this.isHide);
+      this.targetDom.classList.add(this.fadeOut);
       this.targetDom.classList.remove(this.fadeInUp);
       this.body.classList.remove(this.isHidden);
+      setTimeout(() => {
+        this.targetDom.classList.remove(this.fadeOut);
+        this.targetDom.classList.add(this.isHide);
+      }, this.setTimer);
     }, false);
   }
 }
