@@ -389,9 +389,19 @@
     display: flex;
     justify-content: space-between;
     padding: 0 30%;
-    &-link {
-      a {
-        @include linkAnimation();
+    a {
+      @include linkAnimation();
+    }
+    &-prev {
+      &::before {
+        content: "<";
+        padding-right: .4em;
+      }
+    }
+    &-next {
+      &::after {
+        content: ">";
+        padding-left: .4em;
       }
     }
   }
@@ -443,9 +453,6 @@
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  div:first-child {
-    margin-right: 10px;
-  }
   a {
     font-size: 90%;
     text-decoration: none;
@@ -455,6 +462,19 @@
   div {
     a {
       @include linkAnimation();
+    }
+  }
+  &-prev {
+    margin-right: 10px;
+    &::before {
+      content: "<";
+      padding-right: .4em;
+    }
+  }
+  &-next {
+    &::after {
+      content: ">";
+      padding-left: .4em;
     }
   }
   &-block {
