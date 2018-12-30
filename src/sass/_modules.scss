@@ -106,6 +106,9 @@
       width: 30px;
       background-color: $gray-color-01;
       border-radius: 2px;
+      .l-wrapper-01-top & {
+        background-color: $white-color-02;
+      }
       &:nth-of-type(2) {
         width: 20px;
         top: 10px;
@@ -261,7 +264,7 @@
   z-index: z(menuSp);
   &-inner {
     position: relative;
-    padding: 20% 15%;
+    padding: 80px 15% 0;
   }
   &-title {
     font-size: 120%;
@@ -292,7 +295,8 @@
   }
   .m-cancel-01 {
     top: 40px;
-    left: 87%;
+    left: auto;
+    right: 15px;
   }
 }
 
