@@ -190,6 +190,47 @@
   &.hideCalendar {
     animation: hideCalendar .3s ease 0s 1 forwards;
   }
+  &-inner {
+    position: relative;
+    padding: 45px 65px;
+  }
+  &-title {
+    font-size: 120%;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  &-img {
+    margin-bottom: 30px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &-text-01 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    span {
+      display: inline-block;
+      margin: 3px 1em 0 0;
+      width: 25px;
+      height: 25px;
+      background-color: #999;
+      border-radius: 25px;
+    }
+  }
+  &-text-02 {
+    font-size: 70%;
+  }
+  .m-cancel-01 {
+    left: 330px;
+    &-text {
+      text-align: center;
+      font-size: 65%;
+      padding: .5em 0 0 3px;
+      display: inline-block;
+      letter-spacing: -0.1em;
+    }
+  }
 }
 
 @keyframes showCalendar {

@@ -19,8 +19,8 @@
   width: 30px;
   height: 30px;
   position: relative;
-  span::before,
-  span::after {
+  .m-cancel-01-close::before,
+  .m-cancel-01-close::after {
     display: block;
     content: "";
     position: absolute;
@@ -31,10 +31,10 @@
     margin: -8% 0 0 -42%;
     background: $gray-color-01;
   }
-  span::before {
+  .m-cancel-01-close::before {
     transform: rotate(-45deg);
   }
-  span::after {
+  .m-cancel-01-close::after {
     transform: rotate(45deg);
   }
 }
