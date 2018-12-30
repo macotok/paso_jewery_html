@@ -18,7 +18,7 @@
   height: 103%;
   transition: all .5s ease;
   opacity: 0;
-  background-color: $white-color;
+  background-color: $white-color-01;
   transform: translateY(3%);
 }
 
@@ -37,4 +37,26 @@
   font-size: $fontSize;
   color: $color;
 }
+
+@mixin linkAnimation($borderColor: $black-color) {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: $borderColor;
+  &:before {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: $borderColor;
+    transition: .3s;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
 
