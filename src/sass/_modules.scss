@@ -176,6 +176,40 @@
   }
 }
 
+.m-calendar-01 {
+  position: fixed;
+  top: 0;
+  left: -420px;
+  width: 420px;
+  height: 100%;
+  background-color: #EDEFEF;
+  z-index: z(calendarPc);
+  &.showCalendar {
+    animation: showCalendar .3s ease 0s 1 forwards;
+  }
+  &.hideCalendar {
+    animation: hideCalendar .3s ease 0s 1 forwards;
+  }
+}
+
+@keyframes showCalendar {
+  from {
+    left: -420px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes hideCalendar {
+  from {
+    left: 0;
+  }
+  to {
+    left: -420px;
+  }
+}
+
 .m-calendar-02 {
   position: absolute;
   top: 0;
@@ -278,7 +312,7 @@
 .m-list-02 {
   display: flex;
   justify-content: center;
-  margin: 100px 0 20px;
+  padding: 100px 0 20px;
   li {
     color: $gray-color-01;
     font-size: 80%;

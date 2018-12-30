@@ -2,6 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const Autoprefixer = require('autoprefixer');
 
 module.exports = [
   {
@@ -34,7 +35,7 @@ module.exports = [
         },
         {
           test: /\.scss$/,
-          use:[
+          use: [
             {
               loader: MiniCssExtractPlugin.loader,
             },
@@ -45,7 +46,7 @@ module.exports = [
               loader: 'postcss-loader',
               options: {
                 plugins: [
-                  require('autoprefixer')(
+                  Autoprefixer(
                     {
                       browsers: ['last 2 versions', 'Android >= 4'],
                     },
@@ -91,6 +92,10 @@ module.exports = [
         {
           from: path.resolve(__dirname, 'src/video/'),
           to: path.resolve(__dirname, 'dist/video/'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/font/'),
+          to: path.resolve(__dirname, 'dist/font/'),
         },
       ]),
       new MiniCssExtractPlugin({

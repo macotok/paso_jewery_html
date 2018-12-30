@@ -14,7 +14,7 @@ export default class DrawerSp {
     this.eventTag.addEventListener('click', () => {
       this.targetDom.classList.remove(this.isHide);
       this.targetDom.classList.add(this.fadeInUp);
-      this.targetDom.classList.add(this.isHidden);
+      this.body.classList.add(this.isHidden);
     }, false);
     this.cancelButton[this.targetCancelButton].addEventListener('click', () => {
       this.targetDom.classList.add(this.isHide);
