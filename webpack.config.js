@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const Autoprefixer = require('autoprefixer');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = [
   {
@@ -43,6 +43,10 @@ module.exports = [
             },
             {
               loader: 'css-loader',
+              options: {
+                url: false,
+                sourceMap: true,
+              },
             },
             {
               loader: 'postcss-loader',
@@ -58,6 +62,9 @@ module.exports = [
             },
             {
               loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+              },
             },
           ],
         },
@@ -65,7 +72,7 @@ module.exports = [
           test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
           use: [
             {
-              loader: 'url-loader?limit=100000',
+              loader: 'url-loader',
             },
           ],
         },
@@ -91,6 +98,7 @@ module.exports = [
     resolve: {
       extensions: ['.js'],
     },
+    devtool: 'source-map',
     plugins: [
       new CopyWebpackPlugin([
         {
