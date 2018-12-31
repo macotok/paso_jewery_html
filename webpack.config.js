@@ -106,10 +106,6 @@ module.exports = [
           to: path.resolve(__dirname, 'dist/img/'),
         },
         {
-          from: path.resolve(__dirname, 'src/video/'),
-          to: path.resolve(__dirname, 'dist/video/'),
-        },
-        {
           from: path.resolve(__dirname, 'src/font/'),
           to: path.resolve(__dirname, 'dist/font/'),
         },
