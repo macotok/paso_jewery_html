@@ -11,7 +11,7 @@ window.onload = () => {
     calendarSp.event();
   }
   // CollectionListのAnimation
-  const animationList = new AnimationList('fn-animationList', '.m-list-01-list');
+  const animationList = new AnimationList('fn-animationList', '.fn-animation');
   if (animationList.hasTarget) {
     animationList.setPositionList();
   }

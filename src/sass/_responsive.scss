@@ -38,6 +38,22 @@
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
+    .is-except-top {
+      display: block;
+    }
+    .is-top {
+      display: none;
+    }
+  }
+  .l-wrapper-01 {
+    &-top {
+      .is-except-top {
+        display: none;
+      }
+      .is-top {
+        display: block;
+      }
+    }
   }
 }
 
