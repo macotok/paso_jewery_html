@@ -47,11 +47,17 @@
   }
   .l-wrapper-01 {
     &-top {
-      .is-except-top {
+      .is-except-top,
+      .m-nav-02,
+      .m-nav-03 {
         display: none;
       }
-      .is-top {
+      .is-top,
+      .m-nav-01 {
         display: block;
+      }
+      .m-nav-01 {
+        left: 5%;
       }
     }
   }
@@ -85,6 +91,34 @@
     }
     &-text {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .m-calendar-01 {
+    left: -100%;
+    width: 100%;
+    .m-cancel-01 {
+      left: 85%;
+    }
+  }
+
+  @keyframes showCalendar {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  @keyframes hideCalendar {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
     }
   }
 }

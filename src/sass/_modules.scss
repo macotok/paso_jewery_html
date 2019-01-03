@@ -178,8 +178,8 @@
 .m-calendar-01 {
   position: fixed;
   top: 0;
-  left: -420px;
-  width: 420px;
+  left: -375px;
+  width: 375px;
   height: 100%;
   background-color: #EDEFEF;
   z-index: z(calendarPc);
@@ -234,7 +234,7 @@
 
 @keyframes showCalendar {
   from {
-    left: -420px;
+    left: -375px;
   }
   to {
     left: 0;
@@ -246,7 +246,7 @@
     left: 0;
   }
   to {
-    left: -420px;
+    left: -375px;
   }
 }
 
