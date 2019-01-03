@@ -57,6 +57,11 @@
   &:hover:before {
     width: 100%;
   }
+  @media screen and (max-width: 767px) {
+    &:hover:before {
+      display: none;
+    }
+  }
 }
 
 
