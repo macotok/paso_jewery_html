@@ -1,6 +1,7 @@
 import DrawerSp from './drawerSp';
 import AnimationList from './animationList';
 import CalendarPc from './calendarPc';
+import AddAnimation from './addAnimation';
 
 window.onload = () => {
   // スマホドロワー
@@ -10,9 +11,19 @@ window.onload = () => {
     menuSp.event();
     calendarSp.event();
   }
-  // CollectionListのAnimation
-  const animationList = new AnimationList('fn-animationList', '.fn-animation');
+  // Animationトリガーを付与
+  const addAnimation = new AddAnimation('fn-animationList-02', 'fn-animation', 'img');
+  if (addAnimation.targetDom) {
+    addAnimation.addTrigger();
+  }
+  // CollectionList、ExhibitionListのAnimation
+  const animationList = new AnimationList('fn-animationList-01', '.fn-animation');
   if (animationList.hasTarget) {
+    animationList.setPositionList();
+  }
+  // CollectionDetail、ExhibitionDetailのAnimation
+  const animationDetail = new AnimationList('fn-animationList-02', '.fn-animation');
+  if (animationDetail.hasTarget) {
     animationList.setPositionList();
   }
   // PCでCalendarを表示
